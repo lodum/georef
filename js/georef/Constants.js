@@ -99,8 +99,8 @@ function Constants(){
 							'				xsd:double(?lat) <= <PARAM_YMAX> && ' + newline +
 							'				xsd:double(?long) >= <PARAM_XMIN> && ' + newline +
 							'				xsd:double(?long) <= <PARAM_XMAX> && ' + newline +
-							'				?start < "<PARAM_YEAR>"^^xsd:gYear && ' + newline +
-							'				?end > "<PARAM_YEAR>"^^xsd:gYear ' + newline +
+							'				year(?start) < <PARAM_YEAR> && ' + newline +
+							'				year(?end) > <PARAM_YEAR> ' + newline +
 							'			). ' + newline +
 							'		}LIMIT 10 ' + newline +
 							'	} ' + newline +
